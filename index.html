@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mohit's Portfolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 15);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .daynight{
+        position: absolute;
+        right: 60px;
+        height: 45px;
+        width: 45px;
+        color: #666;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+     border-radius: 50%;
+     transition: 0.5s;
+     background-color: aliceblue;
+     font-size: 2em;
+
+      }
+      .daynight ion-icon:nth-child(2),.banner.night .daynight ion-icon:nth-child(1)
+      {
+        display: none;
+      }
+      .banner.night .daynight ion-icon:nth-child(2){
+        display: block;
+      }
+      .banner.night .leftsection,.banner.night .secondsection,
+      .banner.night .text-grey,.banner.night .vertical-desc,.banner.night nav,
+      .banner.night nav .right ul li a,.banner.night .left{
+        color: #600000
+      }
+     
+    .banner.night nav{
+      background-color: #c7c7c7;
+    }
+    .banner.night .btn{
+      background-color: #292222
+    }
+    .banner.night .daynight{
+      background-color:rgb(21, 21, 61);}
+      
+      .daynight ion-icon:hover{
+       color: rgb(24, 23, 23);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(21, 21, 61);
+        height: 70px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: .5s;
+      }
+      nav ul li a:hover {
+     
+        color: rgb(63, 57, 57);
+           padding-left: 19PX;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.3px;
+        margin: 60px 84px;
+      }
+      .left {
+        position: absolute;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        left: 80px;
+      }
+      .left:hover{
+        color: bisque;
+        font-size: 1.7rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 140px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+
+      .leftsection {
+        font-size: 3rem;
+      }
+      /* -------------------------- */
+      .banner {
+       transition: 0.5s;   
+        }
+      .banner.night {
+       background: white
+      }
+      .leftsection .btn {
+        padding: 12px;
+        margin: 8px;
+        color: white;
+        background-color: rgb(32, 8, 80);
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px ;
+        cursor: pointer;
+      }
+      .leftsection .btn:hover{
+        color: rgb(183, 223, 223);
+        
+        border-radius: 6px;
+        border: 2px solid rgb(111, 111, 111);
+      }
+
+      .rightsection img {
+        width: 80%;
+        margin-top: 50px;
+      }
+      .text-grey {
+        color: gray;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .secondsection .box {
+        background: #9c97f1;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: #9c97f1;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 33px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+        transition: 0.4s;
+      }
+      .vertical-title:hover{
+        color: #9c97f1;
+        margin-bottom: 4px;
+        margin-left: 2px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer {
+        background-color: rgb(19, 12, 19);
+        /* height: 233px;  */
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer-first,.footer-second,.footer-third,.footer-fourth{
+        cursor: pointer;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: grey;
+        padding: 12px 0;
+      }
+      .buttons a{
+        list-style: none;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body class="banner">
+    <header>
+      <nav>
+        <div class="left">Mohit's Portfolio</div>
+        <div class="daynight">
+          <ion-icon name="moon-outline"></ion-icon>
+          <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi,My Name is Mohit
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+          <a href="./Mohit vats.docx" download="Resume"> <button class="btn">Download resume</button> </a>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr class=" HHRR"/>
+      <section class="secondsection">
+        <span class="text-grey">what i am done so far </span>
+        <h1>past experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur laborum odit doloribus repudiandae ut ab vel,
+              voluptatum blanditiis eos soluta, consectetur aliquid
+              exercitationem.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="cs.png" alt="" />
+            <div class="vertical-title">CSS </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur laborum odit doloribus repudiandae ut ab vel,
+              voluptatum blanditiis eos soluta, consectetur aliquid
+              exercitationem.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js1.png" alt="" />
+            <div class="vertical-title">Javascript developer </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur laborum odit doloribus repudiandae ut ab vel,
+              voluptatum blanditiis eos soluta, consectetur aliquid
+              exercitationem.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="react.png" alt="" />
+            <div class="vertical-title">React developer </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur laborum odit doloribus repudiandae ut ab vel,
+              voluptatum blanditiis eos soluta, consectetur aliquid
+              exercitationem.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Mohit's developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyrights &#169; mohitsportfolio.com|All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i> Web Developer </i>", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      let banner= document.querySelector('.banner');
+      let daynight= document.querySelector(".daynight");
+      daynight.onclick= function(){
+        banner.classList.toggle('night')
+      }
+       
+    </script>
+  </body>
+</html>
