@@ -33,11 +33,18 @@
       }
       .banner.night .leftsection,.banner.night .secondsection,
       .banner.night .text-grey,.banner.night .vertical-desc,.banner.night nav,
-      .banner.night nav .right ul li a,.banner.night .left {
+      .banner.night nav .right ul li a,.banner.night .left{
         color: #600000
       }
+      
+      
+      
+      
+      
+      .banner.night .cardDiv .card p,.banner.night .cardDiv .card span{
+        color: #600000
 
-
+      }
       .banner.night .aboutpage_aboutDiv__wB98B .aboutpage_titleDiv h1,.banner.night .aboutpage_aboutDiv__wB98B .aboutpage_titleDiv p,.banner.night .aboutpage_aboutDiv__wB98B .aboutpage_detailsDiv__a3kwx{
         color: #600000;
       }
